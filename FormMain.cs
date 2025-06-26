@@ -6,7 +6,10 @@ namespace Pr9
         {
             InitializeComponent();
         }
-
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -14,10 +17,6 @@ namespace Pr9
             FormMain.Show();
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -25,6 +24,21 @@ namespace Pr9
             pr9_2 FormMain = new();
             FormMain.Show();
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            pr9_3 FormMain = new();
+            FormMain.Show();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            pr9_4 FormMain = new();
+            FormMain.Show();
         }
     }
 }
